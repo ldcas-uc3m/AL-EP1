@@ -486,7 +486,7 @@
 % REFERENCES
 %----------
 
-\usepackage[style=apa, backend=biber, natbib=true, hyperref=true, uniquelist=false, sortcites]{biblatex} % APA citation style
+\RequirePackage[backend=biber, style=ieee, isbn=false, sortcites, maxbibnames=6, minbibnames=1]{biblatex} % IEEE citation style
 
 % force line break when necessary
 \setcounter{biburlnumpenalty}{9000}
