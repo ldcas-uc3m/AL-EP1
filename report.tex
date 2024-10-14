@@ -28,18 +28,53 @@
 
 
 \begin{document}
-    \makecover
+    %\makecover
 
     % \tableofcontents
 
     % contenidos
     \begin{report}
         \section{Introducción}
-        % https://www.mudanzasbenji.com/contacto1
+        Vivimos en un mundo completamente globalizado. La tecnología evoluciona a pasos agigantados y los organismos competentes que hacen cumplir la ley se ven en la necesidad de evolucionar rápidamente en consecuencia. Nos precede una recesión económica derivada de la COVID-19 y de un confinamiento que propulsó la digitalización y exaltó la necesidad del mundo de estar comunicado.
+
+        En este contexto, surge la necesidad en los pequeños comercios de digitalizar su negocio, obtener visibilidad y buscar alternativas que le ayuden a salir del pozo económico en el que se encuentran. Sin embargo, multitud de empresas tecnológicas se aprovechan de la situación con objetivos claramente económicos ajenos a toda moral o ética.
+
+        A continuación, mostraremos un ejemplo erróneo de tratamiento de datos, concretamente una empresa de mudanzas, \cite{benji}, tomando como base la legislación vigente: el \cite{RGPD} (en adelante ``RGPD'') y la \cite{LOPDPGDD} (en adelante ``LOPDPGDD''). 
+        
+        Posteriormente, expondremos qué presuntos incumplimientos ofrece y qué consecuencias legales acarrean estas acciones. Finalmente, visualizaremos otra empresa de mudanzas, \cite{alcorcon}, que cumple adecuadamente con los estándares de privacidad.
+        % \url{https://www.mudanzasbenji.com/contacto1}
         % https://www.amsegoviana.com/mudanzas-alcorcon
 
-
         \section{Presuntos incumplimientos}
+        En esta sección discutiremos los presuntos incumplimientos que \cite{benji} infringe relacionados con el consentimiento y la información a presentar relativa a la política de privacidad \footurl{https://www.mudanzasbenji.com/politica-de-privacidad}.
+
+        Estamos sujetos al artículo 77 del RGPD que dicta el derecho a denunciar las infracciones expuestas a continuación.
+
+        \subsection{El consentimiento}
+        En esta sección nos centraremos en el formulario de contacto\footurl{https://www.mudanzasbenji.com/contacto1} y uso de \textit{cookies} de \cite{benji}.
+
+        \newpage
+        \subsubsection{El formulario de contacto}
+        Tal y como recalca el artículo 4.1 del RGPD, \textit{«Una persona se considerará persona física identificable, aquella reconocible a través de un identificador, que puede ser un nombre, datos de localización...»}. Este artículo entra en juego en cualquier formulario de contacto digital o a papel, que requiera de la necesidad de obtener información sensible del usuario. Enlazando con el artículo posterior 4.2, un tratamiento es conocido por cualquier operación realizada sobre la información identificable de una persona física.
+
+        En este contexto, el artículo 6.1.a refuerza la licitud del tratamiento de los datos adherido a un consentimiento, definido en el artículo 4.11 del RGPD, que choca con el formulario presentado por \cite{benji}. La \figref{formulario_contacto_mudanzasbenji} incorpora la prueba de ausencia de afirmación por parte del interesado, atentando absolutamente contra el artículo 7.1 del RGPD, que obliga al acusado a demostrar que el interesado consintió el tratamiento de sus datos personales.
+        \rasterfigure[.7]{formulario_contacto_mudanzasbenji}{Formulario de contacto de Mudanzas Benji.}
+
+        \subsubsection{Las \textit{cookies} como robo de información}
+        Otra prueba irrefutable de una clara infracción a la LOPDPGDD y en consecuencia al RGPD, es el robo de información por medio de cookies. Es de obligado cumplimiento informar al usuario de la recogida de información delicada por medio de \textit{cookies} y de la disponibilidad de una política de cookies. 
+        
+        Inspeccionando el tráfico de red desde la consola del desarrollador de Google Chrome, hemos podido observar envío de información al servidor en formato de \textit{cookie} de Adobe Cloud\footnote{\texttt{AMCV\_802D40325A94210E0A495D7F\%40AdobeOrg}, véase \figref{cookies_adobe}}.
+        \rasterfigure[.7]{cookies_adobe}{\textit{Cookie} interceptada desde el navegador.}
+
+        \newpage
+        Indagando por la red para obtener información acerca de la \textit{cookie} de la \figref{cookies_adobe}, hemos recogido ciertas características interesantes:
+        \begin{itemize}
+            \item \textbf{Duración.} 2 años.
+            \item \textbf{Descripción.} Este es un nombre de \textit{cookie} de tipo patrón asociado con Adobe Marketing Cloud. Almacena un identificador de visitante único y utiliza un identificador de organización para permitir a una empresa realizar un seguimiento de los usuarios en todos sus dominios y servicios.
+            \item \textbf{Tipo.} Terceros.
+            \item \textbf{Finalidad.} Técnica.
+        \end{itemize}
+        Desafortunadamente, no es posible por vías legales obtener de forma directa qué información recogen del usuario. Sin embargo, utilizando \textit{Cover your tracks} \footurl{https://coveryourtracks.eff.org/}, podemos visualizar qué superficie de ataque ofrece nuestro usuario a la red y declarar qué metainformación expone potencialmente y qué datos han podido ser extraídos por la \textit{cookie}.
         % El consentimiento:
         % - RGPD art. 4.1, 4.2, 4.11, 6.1.a, 7.1
         % - LOPDPGDD art. 6.1
@@ -48,18 +83,19 @@
         % - LOPDPGDD art. 11.2
         % Derecho a denunciar:
         % - RGPD art. 77
-        % Sanciones:
-        % - RGPD art. 82 y 83 y 84.1?
-        % - LOPDPGDD título IX
         % Extras:
         % - LOPDPGDD art. 2.1, 28
 
         % \cite{RGPD} (en adelante ``RGPD'')
 
         % \cite{LOPDPGDD} (en adelante ``LOPDPGDD'')
-
+        % \figref{formulario_contacto_mudanzasbenji}
+        % \rasterfigure[.7]{formulario_contacto_mudanzasbenji}{Formulario de contacto de Mudanzas Benji}
 
         \section{Presuntas consecuencias}
+        % Sanciones:
+        % - RGPD art. 82 y 83 y 84.1?
+        % - LOPDPGDD título IX
 
 
     \end{report}
