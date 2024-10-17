@@ -16,8 +16,8 @@
 \year{2024-2025}  % academic year
 \group{1}
 \author{
-    Luis Daniel Casais Mezquida -- 100429021\\
-    Diego Picazo García -- 100549459
+  Luis Daniel Casais Mezquida -- 100429021\\
+  Diego Picazo García -- 100549459
 }
 % \team{Equipo 69}
 \shortauthor{\abbreviateauthor{Luis Daniel}{Casais Mezquida} \& \abbreviateauthor{Diego}{Picazo García}}
@@ -31,32 +31,23 @@
 
 
 \begin{document}
-    \makecover
+  \makecover[old]
 
-    \tableofcontents
+  \tableofcontents
 
-    % contenidos
-    \begin{report}
+  % contenidos
+  \begin{report}
 
-        \part{Introducción}
-        \import{parts}{intro.tex}
+    \includefrom{parts}{intro.tex}
+    \includefrom{parts}{analisis.tex}
+    \includefrom{parts}{conclusiones.tex}
 
-        \part{Análisis}
-        \import{parts}{incumplimientos.tex}
-        \import{parts}{politicaprivacidad.tex}
-        \import{parts}{denunciar.tex}
-        \import{parts}{sanciones.tex}
-        \import{parts}{extra.tex}
+  \end{report}
 
-        \part{Conclusiones}
-        \import{parts}{conclusiones.tex}
-
-    \end{report}
-
-    % bibliography
-    \label{bibliography}
-    \part{Bibliografía}
-    \printbibliography
+  % bibliography
+  \label{bibliography}
+  \part{Bibliografía}
+  \printbibliography
 
 
 \end{document}
