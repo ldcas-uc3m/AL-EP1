@@ -1,20 +1,17 @@
 \section{Presuntos incumplimientos}
-En esta sección discutiremos los presuntos incumplimientos que \textit{Mudanzas Benji} infringe relacionados con el consentimiento y la información a presentar relativa a la política de privacidad \footurl{https://www.mudanzasbenji.com/politica-de-privacidad} \cite{benjiprivacidad}.
+En esta sección discutiremos los presuntos incumplimientos que \textit{Mudanzas Benji} infringe relacionados con el consentimiento y la información a presentar relativa a la política de privacidad.
 
 Estamos amparados por el artículo 77.1 del RGPD que dicta que \textquote{todo interesado tendrá derecho a presentar
 una reclamación ante una autoridad de control [\dots], si considera que el tratamiento de datos personales que le conciernen infringe el presente Reglamento}.
 
-
-\subsection{El consentimiento}
 % RGPD art. 4.1, 4.2, 4.11, 6.1.a, 7.1
 % LOPDPGDD art. 6.1
-En esta sección nos centraremos en el formulario de contacto\footurl{https://www.mudanzasbenji.com/contacto1} y uso de \textit{cookies} de \textit{Mudanzas Benji}.
 
-\newpage
-\subsubsection{El formulario de contacto}
+
+\subsection{El formulario de contacto}\label{subsec:contacto}
 El artículo 4.1 del RGPD define los datos personales como \textquote{toda información sobre una persona física identificada o identificable}, y especifica que \textquote{[u]na persona se considerará persona física identificable, aquella reconocible a través de un identificador}. Enlazando con el posterior artículo 4.2, el cual define el tratamiento de datos como \textquote{cualquier operación o conjunto de operaciones realizadas sobre datos personales o conjuntos de datos personales}, y con el artículo 4.11, el cual define el consentimiento como \textquote{toda manifestación de voluntad libre, específica, informada e inequívoca por la que el interesado acepta, ya sea mediante una declaración o una clara acción afirmativa, el tratamiento de datos personales que le conciernen}, podemos extraer que es necesario dar un consentimiento afirmativo para que se puedan tratar los datos personales. Este artículo entra en juego en cualquier formulario de contacto digital o a papel, que requiera de la necesidad de obtener información sensible del usuario.
 
-En este contexto, el artículo 6.1.a) del RGPD refuerza la licitud del tratamiento de los datos adherido a un consentimiento, que choca con el formulario presentado por \textit{Mudanzas Benji}, ya que el tratamiento de los datos solo será lícito sí \textquote{el interesado dio su consentimiento para el tratamiento de sus datos personales}. La \figref{formulario_contacto_mudanzasbenji} incorpora la prueba de ausencia de afirmación por parte del interesado, atentando absolutamente contra el artículo 6.1 de la LOPDPGDD por el cual \textquote{se entiende por consentimiento del afectado toda manifestación de voluntad libre, específica, informada e inequívoca por la que este acepta, ya sea mediante una declaración o una clara acción afirmativa, el tratamiento de datos personales que le conciernen}. Podemos observar un ejemplo correcto en la \figref{formulario_contacto_amsegoviana}.
+En este contexto, el artículo 6.1.a) del RGPD refuerza la licitud del tratamiento de los datos adherido a un consentimiento, que choca con el formulario presentado por \textit{Mudanzas Benji}\footurl{https://www.mudanzasbenji.com/contacto1}, ya que el tratamiento de los datos solo será lícito sí \textquote{el interesado dio su consentimiento para el tratamiento de sus datos personales}. La \figref{formulario_contacto_mudanzasbenji} incorpora la prueba de ausencia de afirmación por parte del interesado, atentando absolutamente contra el artículo 6.1 de la LOPDPGDD por el cual \textquote{se entiende por consentimiento del afectado toda manifestación de voluntad libre, específica, informada e inequívoca por la que este acepta, ya sea mediante una declaración o una clara acción afirmativa, el tratamiento de datos personales que le conciernen}. Podemos observar un ejemplo correcto en la \figref{formulario_contacto_amsegoviana}.
 
 \rasterfigure[.85]{formulario_contacto_mudanzasbenji}{Formulario de contacto de Mudanzas Benji.}
 \rasterfigure[.85]{formulario_contacto_amsegoviana}{Formulario de contacto de Mudanzas Segoviana.}
@@ -22,9 +19,8 @@ En este contexto, el artículo 6.1.a) del RGPD refuerza la licitud del tratamien
 También cabe mencionar el artículo 7.1 del RGPD, que obliga a que \textquote{[c]uando el tratamiento se base en el consentimiento del interesado, el responsable deberá ser capaz de demostrar que aquel consintió el tratamiento de sus datos personales}.
 
 
-\newpage
-\subsubsection{Las \textit{cookies} como robo de información}
-Otra prueba irrefutable de una clara infracción a la LOPDPGDD y en consecuencia al RGPD, es el robo de información por medio de cookies. Es de obligado cumplimiento informar al usuario de la recogida de información delicada por medio de \textit{cookies} y de la disponibilidad de una política de cookies.
+\subsection{El uso de \textit{cookies}}
+Otra posible forma de tratamiento de datos personales es mediante el uso de \textit{cookies}. En caso de que esas \textit{cookies} recojan datos personales, es de obligado cumplimiento informar al usuario de ello, tal y como mencionamos en la \subsecref{contacto}.
 
 Inspeccionando el tráfico de red desde la consola del desarrollador de Google Chrome, hemos podido observar envío de información al servidor en formato de \textit{cookie} de Adobe Cloud\footnote{Específicamente, la \textit{cookie} \texttt{AMCV\_802D40325A94210E0A495D7F\%40AdobeOrg}} (véase \figref{cookies_adobe}).
 
@@ -38,7 +34,7 @@ Indagando por la red para obtener información acerca de la \textit{cookie} de l
     \item \textbf{Finalidad:} Técnica.
 \end{itemize}
 
-Desafortunadamente, no es posible obtener de forma directa qué información recogen del usuario. Sin embargo, utilizando \textit{Cover your tracks} \cite{coveryourtracks}, podemos visualizar qué superficie de ataque ofrece nuestro usuario a la red y declarar qué metainformación expone potencialmente y qué datos han podido ser extraídos por la \textit{cookie}. A continuación, declararemos los puntos más relevantes, pero el informe completo, lo podemos encontrar \href{https://coveryourtracks.eff.org/results?&aat=1&a=1111&t=1111&dnt=1111&fpi_whorls=%7B%22v2%22%3A%7B%22plugins%22%3A%22Plugin+0%3A+Chrome+PDF+Viewer%3B+Portable+Document+Format%3B+internal-pdf-viewer%3B+%28Portable+Document+Format%3B+application%2Fpdf%3B+pdf%29+%28Portable+Document+Format%3B+text%2Fpdf%3B+pdf%29.+Plugin+1%3A+Chromium+PDF+Viewer%3B+Portable+Document+Format%3B+internal-pdf-viewer%3B+%28Portable+Document+Format%3B+application%2Fpdf%3B+pdf%29+%28Portable+Document+Format%3B+text%2Fpdf%3B+pdf%29.+Plugin+2%3A+Microsoft+Edge+PDF+Viewer%3B+Portable+Document+Format%3B+internal-pdf-viewer%3B+%28Portable+Document+Format%3B+application%2Fpdf%3B+pdf%29+%28Portable+Document+Format%3B+text%2Fpdf%3B+pdf%29.+Plugin+3%3A+PDF+Viewer%3B+Portable+Document+Format%3B+internal-pdf-viewer%3B+%28Portable+Document+Format%3B+application%2Fpdf%3B+pdf%29+%28Portable+Document+Format%3B+text%2Fpdf%3B+pdf%29.+Plugin+4%3A+WebKit+built-in+PDF%3B+Portable+Document+Format%3B+internal-pdf-viewer%3B+%28Portable+Document+Format%3B+application%2Fpdf%3B+pdf%29+%28Portable+Document+Format%3B+text%2Fpdf%3B+pdf%29.+%22%2C%22hardware_concurrency%22%3A8%2C%22audio%22%3A%22124.04346607114712%22%2C%22canvas_hash_v2%22%3A%222f48771e4d986bfb8bd4b4bf0872d87b%22%2C%22webgl_hash_v2%22%3A%22d5f1c0e3f5df1e2275ef08aef73bf5b3%22%7D%7D}{aquí} \cite{coveryourtracksreport}.
+Desafortunadamente, no es posible obtener de forma directa qué información recogen del usuario. Sin embargo, utilizando \textit{Cover your tracks} \cite{coveryourtracks}, podemos visualizar qué superficie de ataque ofrece nuestro usuario a la red y declarar qué metainformación expone potencialmente y qué datos han podido ser extraídos por la \textit{cookie}. A continuación, declararemos los puntos más relevantes:
 \begin{itemize}
     \item Zona horaria.
     \item Tamaño de pantalla, densidad de colores y fuentes del sistema.
@@ -48,3 +44,5 @@ Desafortunadamente, no es posible obtener de forma directa qué información rec
     \item Vendedor y modelo de procesador y memoria.
     \item Capacidad para bloquear recursos.
 \end{itemize}
+
+Estos datos entran dentro de los considerados como `datos personales', tal y como dice el artículo 4.1 del RGPD: \textquote{se considerará persona física identificable toda persona cuya identidad pueda determinarse, directa o indirectamente, en particular mediante un identificador, como por ejemplo un nombre, un número de identificación, datos de localización, un identificador en línea}. Por este motivo, el uso de estas \textit{cookies} sin el consentimiento del interesado es también una presunta infracción de dicho artículo.

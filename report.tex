@@ -33,24 +33,30 @@
 \begin{document}
     \makecover
 
-    % \tableofcontents
+    \tableofcontents
 
     % contenidos
     \begin{report}
 
+        \part{Introducción}
         \import{parts}{intro.tex}
+
+        \part{Análisis}
         \import{parts}{incumplimientos.tex}
         \import{parts}{politicaprivacidad.tex}
         \import{parts}{denunciar.tex}
         \import{parts}{sanciones.tex}
         \import{parts}{extra.tex}
+
+        \part{Conclusiones}
         \import{parts}{conclusiones.tex}
 
     \end{report}
 
     % bibliography
     \label{bibliography}
-    \printbibliography[title={Referencias}]
+    \part{Bibliografía}
+    \printbibliography
 
 
 \end{document}
